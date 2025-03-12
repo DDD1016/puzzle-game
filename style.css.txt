@@ -1,0 +1,67 @@
+body {
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  text-align: center;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ff5722;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#startBtn { background: #ff9800; color: white; }
+#shuffleBtn { background: #4caf50; color: white; }
+#restartBtn { background: #03a9f4; color: white; }
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.puzzle-container {
+  position: relative;
+  margin: 20px auto;
+  width: 480px;
+  height: 480px;
+  border: 8px solid #ffeb3b;
+  background: #fffde7;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tile {
+  position: absolute;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  background-size: 480px 480px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.win-message {
+  display: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #e91e63;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
